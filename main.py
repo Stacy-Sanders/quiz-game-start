@@ -1,5 +1,6 @@
 from question_model import Question
 from data import question_data
+from quiz_brain import QuizBrain
 
 question_bank = []
 for i in range(len(question_data)-1):
@@ -15,3 +16,5 @@ for i in range(len(question_bank)-1):
 # print(question_bank[1].answer)
 
 print(question_bank)
+
+QuizBrain(question_bank)
